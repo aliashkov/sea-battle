@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Морской бой</title>
+        <style>
+            a{
+                position:absolute;
+                font-family: arial,sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: darkblue;
+                text-decoration: none;
+                user-select: none;
+                padding: .2em 1.2em;
+                outline: none;
+                border: 1px solid rgba(0,0,0,.1);
+                border-radius: 2px;
+                background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+                transition: all .218s ease 0s;
+                z-index: 9999;
+            }
+            #buttonRandom {
+                top: 450px;
+                left: 100px;
+
+            }
+            #buttonClear {
+                top: 450px;
+                left: 250px;
+
+            }
+            #buttonStart {
+                top: 450px;
+                left: 390px;
+
+            }
+            #buttonSecondPlayer {
+                top: 450px;
+                left: 530px;
+
+            }
+            a.button:hover {
+                color: darkblue;
+                border: 1px solid rgb(198,198,198);
+                background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+                box-shadow: 0 1px 2px rgba(0,0,0,.1);
+            }
+            a.button:active {
+                color: darkblue;
+                border: 1px solid rgb(204,204,204);
+                background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+                box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+            }
+            canvas { border: 1px solid black; } 
+        </style>
+    </head>
+    <body>   
+        <a href="#" class="button" id="buttonRandom">Random</a>
+        <a href="#" class="button" id="buttonClear">Clear</a>
+        <a href="#" class="button" id="buttonSecondPlayer">Play with AI</a>
+        <a href="#" class="button" id="buttonStart">Start</a>
+        <canvas></canvas>
+        <!--подключение скриптов-->
+        <script src="Strategy.js"></script>
+        <script src="Draw.js"></script>
+        <script src="Topology.js"></script>
+        <script src="mouse.js"></script>
+        <script src="Game.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
